@@ -17,15 +17,15 @@ function App() {
     <div className="App">
       <form onSubmit={handleSubmit}>
         <h5>First Name: </h5>
-        <input onChange={(e) => setFirstName(e.target.value)}></input>
+        <input onChange={(e) => setFirstName(e.target.value)} type='text'></input>
         <h5>Last Name: </h5>
-        <input onChange={(e) => setLastName(e.target.value)}></input>
+        <input onChange={(e) => setLastName(e.target.value)} type='text'></input>
         <br />
         <br />
         <button type='submit'>Submit</button>
       </form>
-      <h5>Full name: {fullName}</h5>
-    </div>
+      {fullName && <h5>Full name: {fullName}</h5>}
+    </div >
   );
 }
 
