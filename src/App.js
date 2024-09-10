@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
+        <h1>Full Name Display</h1>
         <h5>First Name: </h5>
         <input onChange={(e) => setFirstName(e.target.value)} type='text'></input>
         <h5>Last Name: </h5>
@@ -24,7 +25,7 @@ function App() {
         <br />
         <button type='submit'>Submit</button>
       </form>
-      {fullName && <h5>Full name: {fullName}</h5>}
+      {fullName && <h5>Full Name: {fullName}</h5>}
     </div >
   );
 }
